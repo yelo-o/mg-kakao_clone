@@ -1,0 +1,53 @@
+.nav{
+    position: fixed; /* position fixed needs width&height if there is not, nav gonna be disappeared*/
+    width: 100%;
+    background-color: #FCFCFC;
+    padding: 20px 50px; /* 위아래 padding 20px 양옆 padding 50px */
+    left: 0px;
+    bottom: 0px; /* we want to put nav bottom side. */
+    border-top: 1px solid #f7f7f7
+}
+
+.nav .nav__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav i{
+    font-size: 20px;
+}
+
+.nav .nav__list-link{
+    position: relative;
+}
+
+.nav .nav__badge{
+    position: absolute;
+    top:-7px;
+    right:-7px;
+    color: white;
+    background-color: #dc5d46;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+@keyframes showNavBar{
+    from{
+        transform: translatey(80px);
+    }
+
+    to{
+        transform: none;
+    }
+}
+
+.nav{
+    transform: translatey(80px);
+    animation: showNavBar .5s ease-out forwards;
+    animation-delay: .5s;
+}

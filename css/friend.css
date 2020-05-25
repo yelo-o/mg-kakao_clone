@@ -1,0 +1,72 @@
+.friend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friend .friend__avatar{
+    width: 50px;
+    border-radius: 38%;
+}
+
+.friend__avatar.g-avatar{ /* friend__avatar와 g-avatar를 모두 적용시킨다는 뜻 */
+width: 70px;
+}
+
+.friend__avatar.m-avatar{
+    width: 60px;
+}
+
+.friend .friend__column{
+    display: flex;
+    align-items: center;
+}
+
+.friend .friend__avatar{
+    margin-right: 15px;
+}
+
+.friend__content .friend__name{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.friend__content .friend__status, /* Friends 화면에만 적용 */
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp{
+    opacity: 0.6;
+}
+
+.friend__content .friend__bottom-text{ /* chat에만 적용 */
+    font-size: 14px;
+}
+
+.friend__content .friend__status,
+.friend .chat__timestamp{
+    font-size: 12px; 
+}
+
+.friend .friend__now-listening{
+    border: 2px solid #40af67;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.friend__now-listening span{ /* 테두리말고 글자에만 opacity를 주고 싶을 때 */
+    opacity: 0.6;
+}
+
+.friend__now-listening i{ /* 아이콘의 크기만 줄이고 싶을 때 */
+    font-size: 12px;
+}
+
+.friend__add-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
